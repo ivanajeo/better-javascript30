@@ -1,0 +1,120 @@
+html {
+    font-size: 10px;
+}
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+body {
+    background: url("./drum-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin: auto 0;
+    width: 100%;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.key {
+    border: 0.4rem solid black;
+    max-width: 10rem;
+    flex: 1;
+    background: rgba(0,0,0,0.5);
+    text-shadow: 0 0 .5rem black;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+
+    transition: all 0.07s ease;
+}
+
+/* class to make changes on the buttons when keyboard button pressed */
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ffc600;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 1.2rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;    
+    color: goldenrod;
+}
+
+.profile {
+    margin-bottom: 3px;
+}
+
+.github-link:is(:hover, :active) {
+    letter-spacing: 0.5px;
+    color: rgb(248, 241, 48);
+}
+
+.photo-link:is(:hover, :active) {
+    color: rgb(255, 223, 40);
+}

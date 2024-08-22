@@ -22,7 +22,13 @@ function removePlayingClass(e) {
     key.classList.remove("playing");
 }
 
-
+// Event to listen to keyboard pressed down
 window.addEventListener("keydown", playSound);
+
+// Event to stop transition when transition end
+// also for visual consistency
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+
+// Event to remove .playing
+// prevent .playing to stay when button pressed down for longer time
 window.addEventListener("keyup", removePlayingClass);

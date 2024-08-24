@@ -1,0 +1,136 @@
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --width: 800px;
+    --height: 500px;
+    --base-color: #ffd700;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+    min-width: 1300px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(0, 28, 38);
+    color:#faebd7;
+}
+
+.highlight--color {
+    color: var(--base-color);
+}
+
+.highlight--blur {
+    filter: blur(var(--blur));
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.main {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.left-col {
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+.title {
+    text-align: right;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    gap: 0.4rem;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.inputs input:last-of-type {
+    width: 6rem;
+    padding: 0.05rem 0.1rem;
+}
+
+.right-col {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.img {margin-top: 1.5rem;
+    box-sizing: content-box;
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--base-color);
+}
+
+.footer {
+    width: 100vw;
+    padding: 1rem 0 0.5rem;
+    color: white;
+}
+
+.footer a {
+    cursor: pointer;
+    color: rgb(255, 215, 0);
+    text-decoration: none;
+}
+
+.footer a:is(:hover, :active) {
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}

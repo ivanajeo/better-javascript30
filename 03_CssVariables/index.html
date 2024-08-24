@@ -14,29 +14,31 @@
 <body>
     <div class="container">
         <main class="main">
-            <h1 class="title">Interactive Image Customizer<br />using <span class="highlight--color">CSS</span> and <span class="highlight--color">JS</span></h1>
-            <div class="inputs">
-                <div class="input-box">
-                    <label for="spacing">Spacing:</label>
-                    <input type="range" id="spacing" name="spacing" min="0" max="100" value="10" data-sizing="px">
-                </div>
-
-                <div class="input-box">
-                    <label for="blue">Blur:</label>
-                    <input type="range" id="blur" name="blur" min="0" max="85" value="15" data-sizing="px">
-                </div>
-
-                <div class="input-box">
-                    <label for="size">Size:</label>
-                    <input type="range" id="size" name="size" min="0" max="100" value="100" data-sizing="px">
-                </div>
+            <div class="left-col">
+                <h1 class="title">Interactive<br />Image<br />Customizer<br />using<br /><span class="highlight--blur">CSS</span><br />and<br /><span class="highlight--color">JS</span></h1>
+                <div class="inputs">
+                    <div class="input-box">
+                        <label for="spacing">Spacing:</label>
+                        <input type="range" id="spacing" name="spacing" min="0" max="80" value="10" data-sizing="px">
+                    </div>
+                    <div class="input-box">
+                        <label for="blue">Blur:</label>
+                        <input type="range" id="blur" name="blur" min="0" max="60" value="10" data-sizing="px">
+                    </div>
+                    <div class="input-box">
+                        <label for="size">Size:</label>
+                        <input type="range" id="size" name="size" min="10" max="100" value="100" data-sizing="px">
+                    </div>
                 
-                <div class="input-box">
-                    <label for="base-color">Base Color:</label>
-                    <input type="color" id="base-color" name="base-color" value="#ffd700">
+                    <div class="input-box">
+                        <label for="base-color">Base Color:</label>
+                        <input type="color" id="base-color" name="base-color" value="#ffd700">
+                    </div>
                 </div>
             </div>
-            <img class="img" src="https://picsum.photos/800/500" alt="random 800x500 image">
+            <div class="right-col">
+                <img class="img" src="https://picsum.photos/800/500" alt="random 800x500 image">
+            </div>
         </main>
         <footer class="footer">
             Recreated and Made Better by <a href="https://github.com/ivanajeo/better-javascript30/tree/main/03_CssVariables" class="github-link" target="_blank" rel="noopener noreferrer">ivanajeo</a>

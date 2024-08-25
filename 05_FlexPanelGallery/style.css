@@ -1,0 +1,158 @@
+html {
+    font-size: 16px;
+}
+
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    border: 2px solid rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    color:#faebd7;
+}
+
+.container {
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    position: relative;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.panels {
+    flex: 1;
+    
+    display: flex;
+}
+
+.panel {
+    user-select: none;;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+
+    /* transition for the .panel.open */
+    transition:
+    font-size 1s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+}
+
+.panel.open {
+    flex: 5;
+    filter: grayscale(0%);
+}
+
+.panel1 {background-image: url(./panel-img-1.jpg);}
+.panel2 {background-image: url(./panel-img-5.jpg);}
+.panel3 {background-image: url(./panel-img-3.jpg);}
+.panel4 {background-image: url(./panel-img-4.jpg);}
+.panel5 {background-image: url(./panel-img-2.jpg);}
+
+.word {
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+
+    /* transition for the words in panel */
+    transition: transform 0.5s;
+}
+
+.panel > .word1 {
+    transform: translateY(-100%);
+}
+
+.panel.active > .word1 {
+    transform: translateY(0%);
+    font-size: 3em;
+    justify-content: flex-end;
+}
+
+.panel > .word2 {
+    font-size: 3em;
+}
+
+.panel.active > .word2 {
+    font-size: 7em;
+}
+
+.panel > .word3 {
+    transform: translateY(100%);
+}
+
+.panel.active > .word3 {
+    transform: translateY(0%);
+    font-size: 3em;
+    justify-content: flex-start;
+}
+
+.footer {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 2.5%;
+    left: 50%;
+}
+
+.credit-link {
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 215, 0);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.72), 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+.credit-link:is(:hover, :active) {
+    color: antiquewhite;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.72), 0 0 10px rgba(255, 215, 0, 0.45);
+
+}
+@media (max-width: 900px) {
+    html {
+        /* to change every font when the width is less than 900px */
+        font-size: 10px;
+    }
+}

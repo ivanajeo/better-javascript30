@@ -2,7 +2,7 @@
 
 [This project](https://ivanajeo.github.io/better-javascript30/05_FlexPanelGallery/) was initially based on [WesBos JavaScript30](https://javascript30.com/), but have been recreated and made better by me.
 
-In this project, the initial background is set to greyscale. When a user clicks on a panel, the colors come back.
+In this project, the initial background is set to greyscale. When user clicks on a panel, the colors come back.
 
 
 ## Credits

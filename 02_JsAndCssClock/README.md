@@ -1,6 +1,6 @@
 # JS and CSS Clock | Better JavaScript30
 
-[This project](https://ivanajeo.github.io/better-javascript30/02_JsAndCssClock/) was initially based on [WesBos JavaScript30](https://javascript30.com/), but have been recreated and made better by me.
+[This project](https://ivanajeo.github.io/better-javascript30/02_JsAndCssClock/) was initially based on [WesBos JavaScript30](https://javascript30.com/), but has been recreated and made better by me.
 
 In this project, I added logic to the hour hand to make its movement more precise, allowing it to move every minute and second.
 

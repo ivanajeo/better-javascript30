@@ -1,6 +1,6 @@
 # Interactive Image Customizer | Better JavaScript30
 
-[This project](https://ivanajeo.github.io/better-javascript30/03_CssVariables/) was initially based on [WesBos JavaScript30](https://javascript30.com/), but have been recreated and made better by me.
+[This project](https://ivanajeo.github.io/better-javascript30/03_CssVariables/) was initially based on [WesBos JavaScript30](https://javascript30.com/), but has been recreated and made better by me.
 
 In this project, I made some small design changes to improve the look.
 

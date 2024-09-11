@@ -102,10 +102,12 @@ body {
 .input {
     margin-bottom: 0.5rem;
 }
+
 label {
     display: block;
     margin-bottom: 0.25rem;
-}
+  }
+  
 .btn {
     cursor: pointer;
     background-color: rgb(55, 78, 255);
@@ -113,13 +115,39 @@ label {
     padding: 0.35rem 1rem;
     display: inline-block;
     font-size: 0.9rem;
+  }
+  
+.btn:is(:hover) {
+    background-image: linear-gradient(
+        45deg,
+        hsl(0deg 75% 50%) 0%,
+        hsl(17deg 75% 50%) 8%,
+        hsl(25deg 75% 50%) 17%,
+        hsl(31deg 75% 50%) 25%,
+        hsl(41deg 75% 50%) 33%,
+        hsl(51deg 75% 49%) 42%,
+        hsl(65deg 75% 50%) 50%,
+        hsl(27deg 75% 57%) 58%,
+        hsl(322deg 75% 50%) 67%,
+        hsl(222deg 75% 50%) 75%,
+        hsl(251deg 75% 63%) 83%,
+        hsl(269deg 75% 60%) 92%,
+        hsl(284deg 75% 50%) 100%
+      );
+    border: 1px solid black;
 }
+
+.btn:is(:active) {
+    filter: brightness(80%);
+    border: 1px solid black;
+}
+
 .color-box {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-}
-
+  }
+  
 .color-choose {
     width: 80px;
 }
@@ -144,34 +172,6 @@ label {
 );
 }
 
-
-
-.btn:is(:hover) {
-    background-image: linear-gradient(
-        45deg,
-        hsl(0deg 75% 50%) 0%,
-        hsl(17deg 75% 50%) 8%,
-        hsl(25deg 75% 50%) 17%,
-        hsl(31deg 75% 50%) 25%,
-        hsl(41deg 75% 50%) 33%,
-        hsl(51deg 75% 49%) 42%,
-        hsl(65deg 75% 50%) 50%,
-        hsl(27deg 75% 57%) 58%,
-        hsl(322deg 75% 50%) 67%,
-        hsl(222deg 75% 50%) 75%,
-        hsl(251deg 75% 63%) 83%,
-        hsl(269deg 75% 60%) 92%,
-        hsl(284deg 75% 50%) 100%
-      );
-    border: 1px solid black;
-}
-
-.btn:is(:active) {
-   filter: brightness(80%);
-    border: 1px solid black;
-    
-}
-
 .color-rainbow.clicked {
     background-image: linear-gradient(
         45deg,
@@ -190,4 +190,24 @@ label {
         hsl(284deg 75% 50%) 100%
       );
     border: 1px solid black;
+}
+
+.credit {
+  font-size: 0.75rem;
+  color: rgb(12, 12, 12);
+  margin-top: .75rem;
+  margin-bottom: -0.5rem;
+}
+
+.github-link {
+  cursor: pointer;
+  color: rgb(25, 0, 255);
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 208, 255, 0.35);
+}
+
+.github-link:is(:hover, :active) {
+  font-weight: 700;
+  color: rgb(0, 4, 255);
+  text-shadow: 2px 2px 2px rgba(0, 208, 255, 0.55);
 }

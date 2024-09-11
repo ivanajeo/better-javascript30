@@ -9,8 +9,8 @@ const colorChoose = document.querySelector(".color-choose");
 const colorRainbow = document.querySelector(".color-rainbow");
 const brushSize = document.querySelector(".brush-size");
 
-canvas.width = window.innerWidth - 25;
-canvas.height = window.innerHeight - 25;
+canvas.width = window.innerWidth - 15;
+canvas.height = window.innerHeight - 15;
 
 ctx.strokeStyle = '#000000';
 ctx.lineCap = "round";
